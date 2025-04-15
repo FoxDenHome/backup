@@ -1,3 +1,3 @@
 #!/bin/sh
 
-/opt/backup/restic.sh backup --exclude-caches -x -g '' "$@"
+/opt/backup/restic.sh backup --exclude-caches --exclude /tmp -x -g '' "$@"
